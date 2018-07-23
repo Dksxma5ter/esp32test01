@@ -1,0 +1,29 @@
+ACTUALIZAR ESTADO DE DISPSITIVOS
+SINTAXIS
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+gcloud iot devices configs update --project=esp32test01 \ --region=europe-west1 \ --registry=iot-registry \ --device=esp32_110AC8 \ --config-data="{"led": 1}"
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+REAL
+
+ON LED
+
+gcloud iot devices configs update --config-data="{"led": 1}" --device=esp32_110AC8 --region=europe-west1 --registry=iot-registry 
+
+OFF LED
+
+gcloud iot devices configs update --config-data="{"led": 0}" --device=esp32_110AC8 --region=europe-west1 --registry=iot-registry 
+
+------------------------------------------------------------------------------------------------
+LISTAR DISPSITIVOS
+SINTAXIS
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+gcloud iot devices list --project=my-iot-project \
+    --region=us-central1 \
+    --registry=my-registry
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+INSTRUCCION REAL
+
+gcloud iot devices list --registry="iot-registry" --region=europe-west1
+------------------------------------------------------------------------------------------------
